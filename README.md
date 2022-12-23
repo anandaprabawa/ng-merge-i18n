@@ -28,7 +28,7 @@ npm install ng-merge-i18n --save-dev
 By default, `angular.json` has a builder target named `extract-i18n`. This library relies on it to get the options.
 Make sure to specify the options `format` to `json` since we're currently support this format.
 
-```json
+```jsonc
 {
   // ...
   "projects": {
@@ -60,7 +60,7 @@ You can also define the other options such as `outputPath` and `outFile`. The li
 Define locales on `i18n` option in the project (see [Angular Internationalization](https://angular.io/guide/i18n-common-merge#define-locales-in-the-build-configuration) docs).
 The translation targets will be placed based on the path you provide for each locale.
 
-```json
+```jsonc
 {
   // ...
   "projects": {
@@ -88,7 +88,7 @@ Notes:
   For example, the locale keys from code example above are `id` and `it`.
   Then the locale value for each locale will use those keys on the translation target files.
 
-  ```json
+  ```jsonc
   // id.json file
   {
     "locale": "id",
@@ -106,7 +106,7 @@ Notes:
 Add builder target for merging the translations. The builder name is "`ng-merge-i18n:merge`".
 And the builder target name can be `"merge-i18n"` (recommended), but you can name it whatever you want.
 
-```json
+```jsonc
 {
   // ...
   "projects": {
@@ -125,7 +125,7 @@ And the builder target name can be `"merge-i18n"` (recommended), but you can nam
 
 Additionally, you can provide the builder options to the target.
 
-```json
+```jsonc
 {
   "merge-i18n": {
     "builder": "ng-merge-i18n:merge",
@@ -166,7 +166,7 @@ npm run ng run project-name:merge-i18n
 
 Rather than run merge command manually, it can be used as post script in `package.json`.
 
-```bash
+```jsonc
 {
   "scripts": {
     "extract-i18n": "ng extract-i18n",
