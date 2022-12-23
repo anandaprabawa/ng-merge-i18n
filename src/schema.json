@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "properties": {
+    "builderTarget": {
+      "type": "string",
+      "default": "extract-i18n",
+      "description": "Builder target's name which extract the translation."
+    },
+    "sort": {
+      "type": "string",
+      "default": "push",
+      "description": "How the translation is sorted.",
+      "enum": ["push", "asc"]
+    },
+    "removeUnusedTranslation": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to remove unused translations."
+    },
+    "removeSource": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to remove the source after translations have been merged."
+    }
+  },
+  "additionalProperties": false
+}

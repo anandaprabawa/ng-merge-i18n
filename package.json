@@ -1,0 +1,54 @@
+{
+  "name": "ng-merge-i18n",
+  "version": "1.0.0",
+  "description": "Merge Angular translations from source",
+  "keywords": [
+    "angular",
+    "translation",
+    "i18n",
+    "angular-i18n"
+  ],
+  "author": "Ananda Widiprabawa",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "builders": "builders.json",
+  "files": [
+    "dist/",
+    "builders.json"
+  ],
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"npm run copy-schema\"",
+    "prestart": "rimraf dist",
+    "build": "tsc",
+    "prebuild": "rimraf dist",
+    "postbuild": "npm run copy-schema",
+    "copy-schema": "copyfiles --up 1 ./src/schema.json ./dist",
+    "lint": "eslint . --ext .ts",
+    "test": "ts-node --project test/tsconfig.json node_modules/jasmine/bin/jasmine --config=jasmine.json"
+  },
+  "engines": {
+    "node": "16",
+    "npm": ">=8"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.10",
+    "@types/jasmine": "^4.3.1",
+    "@types/node": "^16.18.10",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jasmine": "^4.5.0",
+    "prettier": "^2.8.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.7.5"
+  },
+  "dependencies": {
+    "@angular-devkit/architect": "^0.1402.10",
+    "@angular-devkit/core": "^14.2.10"
+  }
+}

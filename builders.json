@@ -1,0 +1,9 @@
+{
+  "builders": {
+    "merge": {
+      "implementation": "./dist/index.js",
+      "schema": "./dist/schema.json",
+      "description": "Merge Angular translations from source"
+    }
+  }
+}
