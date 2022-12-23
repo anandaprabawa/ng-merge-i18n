@@ -9,7 +9,7 @@
     "angular-i18n"
   ],
   "author": "Ananda Widiprabawa",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/index.js",
   "builders": "builders.json",
   "files": [
