@@ -27,8 +27,7 @@
     "test": "ts-node --project test/tsconfig.json node_modules/jasmine/bin/jasmine --config=jasmine.json"
   },
   "engines": {
-    "node": "16",
-    "npm": ">=8"
+    "node": ">=16"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.10",
