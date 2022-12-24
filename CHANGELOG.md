@@ -1,4 +1,8 @@
-## 1.0.0 (December 23, 2022)
+## v1.0.1 (December 24, 2022)
+
+- Change supported node engines >=16
+
+## v1.0.0 (December 23, 2022)
 
 First release with features:
 
