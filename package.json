@@ -8,7 +8,6 @@
     "i18n",
     "angular-i18n"
   ],
-  "author": "Ananda Widiprabawa",
   "license": "MIT",
   "main": "dist/index.js",
   "builders": "builders.json",
@@ -28,6 +27,18 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "homepage": "https://github.com/anandaprabawa/ng-merge-i18n#readme",
+  "bugs": {
+    "url": "https://github.com/anandaprabawa/ng-merge-i18n/issues"
+  },
+  "author": {
+    "name": "Ananda Widiprabawa",
+    "url": "https://github.com/anandaprabawa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anandaprabawa/ng-merge-i18n.git"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.10",
